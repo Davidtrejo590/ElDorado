@@ -14,4 +14,3 @@ jQuery(window).scroll(function(){
         jQuery("#backtop").removeClass("visible");
     }
 })
-

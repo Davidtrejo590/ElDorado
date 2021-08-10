@@ -1,106 +1,299 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Dorado</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <!-- Back Top -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="/libs/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Back Top -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<title>El Dorado</title>
 </head>
 
 <body>
 
-    <header>
-        <a href="#" class="logo">El Dorado</a>
-        <nav>
-            <a href="#fabricacion">Fabricación</a>
-            <a href="#about">Nosotros</a>
-            <a href="/contact.html">Ventas</a>
-        </nav>
-    </header>
-
-    <section class="home">
-        <img src="/img/bg.jpg" alt="">
-        <img src="/img/agave.png" class="agave" alt="">
-        <div class="info">
-            <p class="paragraph">El mejor sabor, calidad y presentación solo para los conocedores del buen mezcal</p>
-            <a href="#el-dorado" class="btn">Read More</a>
+  <div>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <h2>El Dorado</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">El Dorado</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Nosotros">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Fabricacion">Fabricación</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/contact.html">Ventas</a>
+              </li>
+          </div>
         </div>
-    </section>
+      </div>
+    </nav>
+  </div>
 
-    <section class="content" id="el-dorado">
-        <h2>Mezcal El Dorado</h2>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus enim impedit ea placeat delectus
-            dolorum, laboriosam,
-            quam numquam eos magni quas voluptate, dolorem maiores expedita molestiae non a blanditiis obcaecati. Quos
-            porro, voluptatem
-            fuga adipisci facilis nulla labore maiores dolores repellendus? Deserunt non eos ducimus doloremque hic
-            veniam iure architecto.
-        </p><br>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus enim impedit ea placeat delectus
-            dolorum, laboriosam,
-            quam numquam eos magni quas voluptate, dolorem maiores expedita molestiae non a blanditiis obcaecati. Quos
-            porro, voluptatem
-            fuga adipisci facilis nulla labore maiores dolores repellendus? Deserunt non eos ducimus doloremque hic
-            veniam iure architecto.
-        </p><br>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus enim impedit ea placeat delectus
-            dolorum, laboriosam,
-            quam numquam eos magni quas voluptate, dolorem maiores expedita molestiae non a blanditiis obcaecati. Quos
-            porro, voluptatem
-            fuga adipisci facilis nulla labore maiores dolores repellendus? Deserunt non eos ducimus doloremque hic
-            veniam iure architecto.
-        </p><br>
-    </section>
+  <div class="container-fluid">
 
-    <section class="fabricacion" id="fabricacion">
-        <div class="main-section">
-            <img src="/img/agave_bn.png" style="width:200px; height: 150px;">
-            <div>
-                <h1>¿Cómo se produce 'El Dorado'?</h1>
-                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo cupiditate velit magnam iusto eveniet saepe sit totam,
-                    debitis fuga similique.</p>
+    <div class="row">
+      <div class="col-12" style="background-image: url(/img/bg.jpg);">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="text-center">
+                <img src="/img/agave.png" alt="...">
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <h3 style="color: #000;"><strong>Conoce como se fabrica nuestro producto</strong></h3>
+              </div>
             </div>
-        </div>
-    </section>
-
-    <section class="about" id="about">
-        <div class="main-section">
-            <div>
-                <h1>¿Quiénes somos?</h1>
-                <p>El dorado es una marca creada solo para ofrecerte lo mejor de nosotros y de nuestros productos.</p>
+            <div class="carousel-item">
+              <div class="text-center">
+                <img src="/img/agave_2.png" alt="...">
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <h3 style="color: #000"><strong>Directo de Oaxaca para el Mundo</strong></h3>
+              </div>
             </div>
-            <img src="/img/agave_bn.png" style="width:200px; height: 150px;">
-        </div>
-    </section>
-
-    <section class="footer">
-        <div class="logo-items">
-            <a href="/"><img src="/img/Logo_El_Dorado.PNG" class="img-logo"></a>
-            <div class="items">
-                <h2 >Redes Sociales</h2>
-                <div class="items-icons">
-                    <a href="#!" class="link-item"><i class="fab fa-facebook" style="color: #3B5990;"></i></a>
-                    <a href="#!" class="link-item"><i class="fab fa-twitter" style="color: #00ACEE"></i></a>
-                    <a href="#!" class="link-item"><i class="fab fa-youtube" style="color: #C4302B"></i></a>
-                </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <img src="/img/agave_3.png" alt="...">
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <h3 style="color: #000;"><strong>Atrevete a porbar el sabor del Mezcal %100 Mexicao.</strong></h3>
+              </div>
             </div>
-            <a id="backtop"><i class="fas fa-chevron-up"></i></a>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div style="margin-top: 30px;">
-            <h3 style="text-align: center; color: #fff;"><i class="far fa-copyright"></i> Copyright 2021</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="Nosotros" class="card" style="background-color: #FCF5ED;">
+        <div class="card-body">
+          <div class="card-title d-flex justify-content-center">
+            <h class="display-1">Mezcal El Dorado</h1>
+          </div>
+          <div>
+            <p class="card-text text-justify">
+              La empresa de mezcal “El dorado” es una empresa de origen mexicano, que nació
+              el 15 de junio del 2021, como parte de la alta popularidad que el producto ha ido
+              alcanzado entre jóvenes y adultos mayores en los últimos años, la empresa se
+              encuentra ubicada en el estado de Oaxaca un estado con alta producción de mezcal
+              alcanzado el punto de hasta el 80% del total de producción de mezcal del país por
+              su alta riqueza en especies de agave.
+            </p>
+            <div class="text-center">
+              <img src="/img/agave_4.jpg" class="img-fluid rounded">
+            </div>
+
+
+          </div>
+
+          <div class="dropdown-divider"></div>
+
+          <div class="card-title d-flex justify-content-center">
+            <h class="display-3">Objetivo</h1>
+          </div>
+          <div>
+            <p class="card-text text-justify">
+              Que todas las personas disfruten del buen sabor de esta bebida y tengan la mejor
+              experiencia en el consumo, ofreciendo un producto 100% mexicano y de calidad, con
+              altos estándares en la producción de nuestras bebidas para así ofrecer el producto
+              definitivo que cumplirá con todas las expectativas de nuestros clientes.
+            </p>
+          </div>
+
+
         </div>
 
-    </section>
+      </div>
+    </div>
 
-    <script type="text/javascript" src="/js/index.js"></script>
-    <script type="text/javascript" src="/js/jquery.backtop.js"></script>
+    <div class="row" style="background-color: #FAD7A0;">
+      <div id="Fabricacion">
+        <div class="col-12 text-center">
+          <h class="display-3">¿Cómo se produce 'El Dorado'?</h1>
+        </div>
+      </div>
 
+      <div class="row d-flex align-items-center pt-3 pb-3">
+        <div class="col-6 text-center">
+          <h3>01 Cultivo y Cosecha</h3>
+          <p>
+            Se cultiva el agave en el terreno seleccionado y el crecimiento de la planta tarda entre 8 y 10 años para
+            estar listo, el cultivo como se mencionó anteriormente serán filas separadas cada 3 metros y en la misma
+            fila el agave estará a 1.5 metros de distancia.
+          </p>
+        </div>
+        <div class="col-6 text-center">
+          <img src="/img/cultivo.jpg" class="rounded img-fluid">
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center pt-3 pb-3">
+        <div class="col-6 text-center">
+          <img src="/img/piñas.jpg" class="rounded img-fluid">
+        </div>
+        <div class="col-6 text-center">
+          <h3>02 Elaboración de Piñas y Traslado al Palenque</h3>
+          <p>
+            Cada mes los jimadores evalúan si el agave está listo, en caso afirmativo se procede a extraerlo,
+            la recolección será solo una vez por mes con un máximo esperado de 70 unidades, una vez extraído se debe
+            reemplazar el agave con uno nuevo.
+          </p>
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-baseline pt-3 pb-3">
+        <div class="row text-center">
+          <h3>03 Cocimiento y Molienda</h3>
+          <p>
+            El horneado tiene una duración aproximada de tres a cinco días para lograr la plena cocción. Al terminar
+            esta fase, el agave cambia de color blanco a caramelo, lo que es indicio de un buen cocimiento, puesto que
+            se ha logrado que los carbohidratos o almidones contenidos en las piñas se transformen en azúcares.
+          </p>
+        </div>
+        <div class="col-6 text-center">
+          <img src="/img/molino.jpg" class="rounded img-fluid">
+        </div>
+        <div class="col-6 text-center">
+          <img src="/img/cocimiento.jpg" class="rounded img-fluid">
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center pt-3 pb-3">
+        <div class="col-6 text-center">
+          <img src="/img/fermentacion.jpg" class="rounded img-fluid">
+        </div>
+        <div class="col-6 text-center">
+          <h3>04 Fermentación y Destilación</h3>
+          <p>
+            La fermentación natural deja que los microorganismos actúen libremente y desdoblan los hidratos de carbono
+            para convertirlos en alcohol etílico, se puede ayudar al proceso sin alterarlo, vertiéndose de forma
+            alternada agua fría y caliente para apoyar a los microorganismos.
+          </p>
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center pt-3 pb-3">
+        <div class="col-6 text-center">
+          <h3>05 Envasado</h3>
+          <p>
+            Es la última fase del proceso, para ello los mezcaleros estandarizan el producto mediante diversos métodos
+            como la homogeneización y estabilización del mezcal. Se debe usar el ajuste del grado alcohólico, que según
+            la NOM del mezcal debe estar entre 36 y 55% de alcohol sobre volumen.
+          </p>
+        </div>
+        <div class="col-6 text-center">
+          <img src="/img/envasado.jpg" class="rounded img-fluid">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="d-flex flex-column" style="background-color: #FCF5ED;">
+
+        <div class="col-12">
+          <div class="text-center">
+            <h1 class="display-5">¿Dónde Comprar?<p class="display-5"><strong>El Dorado</strong></p>
+            </h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6 d-flex justify-content-end">
+            <div class="embed-responsive embed-responsive-21by9 p-2">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13091.952347055052!2d-97.58292013287924!3d16.877226938887556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c7c4837b88e1db%3A0x82540c2ac940f8ee!2sSantiago%20Yosond%C3%BAa%2C%20Oax.!5e1!3m2!1ses!2smx!4v1628272405748!5m2!1ses!2smx"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+              </iframe>
+            </div>
+          </div>
+
+          <div class="col-6 d-flex justify-content-center">
+            <div class="d-flex flex-column center-text">
+              <h1 class="display-6">Ubicación</h1>
+              <p>Nos encontramos ubicados en</p>
+              <div class="d-flex flex-row align-items-baseline">
+                <i class="fas fa-map-marker-alt"></i>
+                <p><span style="color: #FCF5ED;">...</span>Santiago Yosondúa, Oaxaca</p>
+              </div>
+              <div class="center-text">
+                <img src="/img/Logo_El_Dorado.PNG" class="rounded">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row" style="background-color: #FAD7A0;">
+      <div class="col-6 mt-2 d-flex justify-content-center">
+        <a href="/"><img src="/img/Logo_El_Dorado.PNG" class="img-logo"></a>
+      </div>
+      <div class="col-6">
+        <h2 class="p-2" style="text-align: center;">Redes Sociales</h2>
+        <div class="d-flex justify-content-evenly mt-1">
+          <a href="#!" class="link-item"><i class="fab fa-facebook" style="color: #3B5990;"></i></a>
+          <a href="#!" class="link-item"><i class="fab fa-twitter" style="color: #00ACEE"></i></a>
+          <a href="#!" class="link-item"><i class="fab fa-youtube" style="color: #C4302B"></i></a>
+          <a id="backtop"><i class="fas fa-chevron-up link-item"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pt-2" style="background-color: #FAD7A0;">
+      <h3 style="text-align: center; color: #000;"><i class="far fa-copyright"></i> Copyright 2021</h3>
+    </div>
+
+
+  </div>
+
+
+  <script src="/libs/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.backtop.js"></script>
 </body>
 
 </html>

@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
-    /*background: lightblue;*/
+    font-family: "Roboto", sans-serif;
 }
 
 body{
@@ -49,8 +50,8 @@ body{
 }
 
 .contact_form .text_box{
-    background: #000;
-    color: #fff;
+    background: #fff;
+    color: #000;
     border: none;
     width: calc(50% -10px);
     height: 50px;
@@ -67,8 +68,8 @@ body{
 }
 
 .contact_form textarea{
-    background: #000;
-    color: #fff;
+    background: #fff;
+    color: #000;
     border: none;
     width: 100%;
     padding: 12px;
